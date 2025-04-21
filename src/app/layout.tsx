@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,12 +13,70 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="scroll-smooth">
+      <body>
+        <header className="py-5 font-lato fixed left-0 right-0 top-0 bg-[#212121] z-50">
+          <nav className="flex justify-between items-center px-20">
+            <h1>LOGO</h1>
+            <ul className="flex gap-10">
+              <li>
+                <Link href="#hero-section" className="font-lato">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="#about-me-section">About Me</Link>
+              </li>
+              <li>
+                <Link href="#my-skills-section">Skills</Link>
+              </li>
+              <li>
+                <Link href="#portfolio-section">Portfolio</Link>
+              </li>
+              <li>
+                <Link href="/gallery">Experience</Link>
+              </li>
+
+              <li>
+                <Link href="/testimoni">Testimonial</Link>
+              </li>
+            </ul>
+            <button>Contact Me</button>
+          </nav>
+        </header>
         {children}
       </body>
+      <footer>
+        <div className="bg-[#212121]">
+          <div className="container mx-auto py-10">
+            <nav className="grid place-items-center px-20">
+              <ul className="flex gap-10 pt-20">
+                <li>
+                  <Link href="#hero-section" className="font-lato">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#about-me-section">About Me</Link>
+                </li>
+                <li>
+                  <Link href="#my-skills-section">Skills</Link>
+                </li>
+                <li>
+                  <Link href="#portfolio-section">Portfolio</Link>
+                </li>
+                <li>
+                  <Link href="/gallery">Experience</Link>
+                </li>
+
+                <li>
+                  <Link href="/testimoni">Testimonial</Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
     </html>
   );
 }
