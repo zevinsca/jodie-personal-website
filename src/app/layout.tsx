@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import { Linkedin, Github, Instagram } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -74,6 +75,11 @@ export default function RootLayout({
                 </li>
               </ul>
             </nav>
+            <div className="grid gap-4 py-10 text-orange-theme">
+              <Github />
+              <Linkedin />
+              <Instagram />
+            </div>
           </div>
         </div>
       </footer>

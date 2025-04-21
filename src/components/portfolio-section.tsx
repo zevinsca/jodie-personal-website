@@ -15,25 +15,25 @@ export default function PortfolioSection() {
           src="/portfolio/geovision.png"
           alt="Geovision Website"
           title="Geovision Indonesia"
-          description="Website company profile"
+          description="Built a WordPress site for geovision.id to present company services. Customized theme and setup resulted in a clean, responsive profile."
         />
         <PortfolioCard
           src="/portfolio/pt-intinya.png"
           alt="PT Intinya Website"
           title="PT Intinya Teknologi"
-          description="Website company profile"
+          description="Developed ptintinyateknologi.com using PHP to display services and products. Delivered a fast, structured company profile."
         />
         <PortfolioCard
           src="/portfolio/toysnhobbies.png"
           alt="Toys n Hobbies Website"
           title="Toys n Hobbies"
-          description="Website company profile"
+          description="Created toysnhobbies.id with PHP to highlight products for hobbyists. Simple, dynamic layout improved visibility."
         />
         <PortfolioCard
           src="/portfolio/baleton.png"
           alt="Baleton Website"
           title="Baleton Flowerchef"
-          description="Website company profile"
+          description="Designed baletonflowerchef.com using PHP, JS, and Tailwind. Focused on elegant UI and smooth user experience."
         />
       </div>
     </main>
