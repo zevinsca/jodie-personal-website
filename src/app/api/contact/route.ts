@@ -30,11 +30,13 @@ export async function POST(req: Request) {
     console.log(response);
 
     return Response.json({ success: true });
-  } catch (error: any) {
+  } catch (error) {
     console.error(error);
-    return Response.json(
-      { success: false, error: error.message || "Something went wrong" },
-      { status: 500 }
-    );
+    if (error instanceof Error) {
+      return Response.json(
+        { success: false, error: error.message || "Something went wrong" },
+        { status: 500 }
+      );
+    }
   }
 }

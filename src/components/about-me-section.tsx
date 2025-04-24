@@ -10,22 +10,22 @@ export default function AboutMeSection() {
         </p>
         <div className="grid lg:grid-cols-8 gap-7 items-stretch">
           <p className="lg:col-start-2 lg:col-span-7 lg:py-10 py-7 text-gray-400 lg:text-base text-sm text-justify px-10 h-full bg-[#1b1b1b] rounded-l-3xl border-orange-theme border-r-3">
-            Hi, I’m a front-end developer with about 2 years of experience. I
-            focus mainly on building responsive layouts using HTML and Tailwind
-            CSS.
+            Hi, I&apos;m a front-end developer with about 2 years of experience.
+            I focus mainly on building responsive layouts using HTML and
+            Tailwind CSS.
             <br />
             <br />
-            I'm still getting the hang of JavaScript, back-end stuff, and coding
-            fundamentals — but I’m constantly learning and trying to improve
-            with each project I work on.
+            I&apos;m still getting the hang of JavaScript, back-end stuff, and
+            coding fundamentals — but I&apos;m constantly learning and trying to
+            improve with each project I work on.
             <br />
             <br />I enjoy turning designs into clean, functional websites and
             paying attention to the little details that make a layout feel
             polished.
             <br />
             <br />
-            When I’m not coding, I’m probably tweaking styles, watching
-            tutorials, or experimenting with layouts just for fun.
+            When I&apos;m not coding, I&apos;m probably tweaking styles,
+            watching tutorials, or experimenting with layouts just for fun.
           </p>
         </div>
       </div>
