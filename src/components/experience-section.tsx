@@ -38,7 +38,7 @@ export default function ExperienceSection() {
                   optimizing for mobile responsiveness and performance, and
                   providing ongoing updates or improvements as needed. I aim to
                   create engaging, accessible digital experiences that align
-                  with each client&apos;s brand and business goals.
+                  with each client&apos;`s brand and business goals.
                 </p>
               </div>
             </div>
