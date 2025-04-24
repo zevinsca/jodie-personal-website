@@ -8,7 +8,10 @@ export default function Footer() {
       <div className="bg-[#212121]">
         <div className="container mx-auto lg:pt-10 pt-10 lg:pb-20 pb-16">
           <nav className="grid place-items-center px-20">
-            <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto " />
+            <div className="relative h-12 w-12">
+              <Image fill src="/nav/logo-zj.png" alt="logo zevinsca jodie" />
+            </div>
+
             <ul className="flex lg:flex-row flex-col lg:gap-10 gap-5 text-center pt-10">
               <li>
                 <Link href="#hero-section" className="font-lato">

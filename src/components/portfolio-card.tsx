@@ -17,11 +17,15 @@ export default function PortfolioCard(props: {
         rel="noopener noreferrer"
         className="relative w-full h-auto overflow-hidden rounded-2xl shadow-lg group lg:block hidden"
       >
-        <Image
-          className="w-full h-full object-cover"
-          src={props.src}
-          alt={props.alt}
-        />
+        <div className="relative w-full h-72">
+          <Image
+            fill
+            className="object-cover"
+            src={props.src}
+            alt={props.alt}
+          />
+        </div>
+
         <div className="absolute inset-0 bg-black/80 flex flex-col items-center justify-center text-white text-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p className="text-3xl font-bold opacity-100">{props.title}</p>
           <p className="text-base opacity-100 pt-3 px-10">
@@ -36,11 +40,15 @@ export default function PortfolioCard(props: {
         rel="noopener noreferrer"
         className="relative w-full h-auto overflow-hidden rounded-2xl shadow-lg group block lg:hidden"
       >
-        <Image
-          className="w-full h-full object-cover"
-          src={props.src}
-          alt={props.alt}
-        />
+        <div className="w-full h-52 relative">
+          <Image
+            fill
+            className="object-cover"
+            src={props.src}
+            alt={props.alt}
+          />
+        </div>
+
         <div className="bg-gray-600 text-gray-300 py-5">
           <p className="text-xl px-10 font-bold opacity-100  text-center">
             {props.title}

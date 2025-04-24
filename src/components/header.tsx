@@ -14,7 +14,9 @@ export default function Header() {
       {/* Desktop Navigation */}
       <nav className="md:block hidden py-5 font-lato fixed left-0 right-0 top-0 bg-[#212121] z-50">
         <div className="flex justify-between items-center px-20">
-          <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
+          <div className="relative h-12 w-12">
+            <Image fill src="/nav/logo-zj.png" alt="logo zevinsca jodie" />
+          </div>
           <ul className="flex gap-10">
             <li>
               <Link href="#hero-section" className="font-lato">
@@ -45,7 +47,9 @@ export default function Header() {
       {/* Mobile Navigation */}
       <nav className="block md:hidden py-5 font-lato fixed left-0 right-0 top-0 bg-[#212121] z-50 ">
         <div className="px-5 flex justify-between items-center relative">
-          <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
+          <div className="relative h-12 w-12">
+            <Image fill src="/nav/logo-zj.png" alt="logo zevinsca jodie" />
+          </div>
           <button className="flex sm:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <IoClose /> : <RxHamburgerMenu />}
           </button>

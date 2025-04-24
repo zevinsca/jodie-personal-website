@@ -61,12 +61,15 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex justify-center lg:order-2 order-1">
-          <Image
-            // style={{ height: "70vh", objectFit: "cover" }}
-            className="lg:pt-10 pt-5 grayscale-75 lg:px-0 px-10 h-[50vh] lg:h-[70vh] object-cover"
-            src="/hero/main-photo.jpg"
-            alt="Main Photo"
-          />
+          <div className="relative h-[50vh] lg:h-[70vh] w-full">
+            <Image
+              fill
+              // style={{ height: "70vh", objectFit: "cover" }}
+              className="lg:pt-10 pt-5 grayscale-75 lg:px-0 px-10 object-cover"
+              src="/hero/main-photo.jpg"
+              alt="Main Photo"
+            />
+          </div>
         </div>
       </div>
     </section>
