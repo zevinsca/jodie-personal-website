@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TestimonialCard(props: {
   src: string;
   alt: string;
@@ -7,7 +9,7 @@ export default function TestimonialCard(props: {
 }) {
   return (
     <div className="bg-gray-700 rounded-2xl flex flex-col items-center justify-center h-full relative lg:mt-10 mt-20">
-      <img
+      <Image
         className="w-32 h-32 object-cover rounded-full mb-4 absolute top-0 -translate-y-1/2"
         src={props.src}
         alt={props.alt}

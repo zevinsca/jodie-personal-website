@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PortfolioCard(props: {
   src: string;
@@ -16,7 +17,7 @@ export default function PortfolioCard(props: {
         rel="noopener noreferrer"
         className="relative w-full h-auto overflow-hidden rounded-2xl shadow-lg group lg:block hidden"
       >
-        <img
+        <Image
           className="w-full h-full object-cover"
           src={props.src}
           alt={props.alt}
@@ -35,7 +36,7 @@ export default function PortfolioCard(props: {
         rel="noopener noreferrer"
         className="relative w-full h-auto overflow-hidden rounded-2xl shadow-lg group block lg:hidden"
       >
-        <img
+        <Image
           className="w-full h-full object-cover"
           src={props.src}
           alt={props.alt}

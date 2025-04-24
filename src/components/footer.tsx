@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Github, Instagram, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="bg-[#212121]">
         <div className="container mx-auto lg:pt-10 pt-10 lg:pb-20 pb-16">
           <nav className="grid place-items-center px-20">
-            <img src="/nav/logo-zj.png" alt="" className="h-12 w-auto " />
+            <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto " />
             <ul className="flex lg:flex-row flex-col lg:gap-10 gap-5 text-center pt-10">
               <li>
                 <Link href="#hero-section" className="font-lato">

@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Header() {
       {/* Desktop Navigation */}
       <nav className="md:block hidden py-5 font-lato fixed left-0 right-0 top-0 bg-[#212121] z-50">
         <div className="flex justify-between items-center px-20">
-          <img src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
+          <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
           <ul className="flex gap-10">
             <li>
               <Link href="#hero-section" className="font-lato">
@@ -45,7 +45,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       <nav className="block md:hidden py-5 font-lato fixed left-0 right-0 top-0 bg-[#212121] z-50 ">
         <div className="px-5 flex justify-between items-center relative">
-          <img src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
+          <Image src="/nav/logo-zj.png" alt="" className="h-12 w-auto" />
           <button className="flex sm:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <IoClose /> : <RxHamburgerMenu />}
           </button>

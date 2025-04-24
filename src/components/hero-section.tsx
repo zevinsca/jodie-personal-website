@@ -1,5 +1,6 @@
 import { Linkedin, Github, Instagram } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -60,7 +61,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex justify-center lg:order-2 order-1">
-          <img
+          <Image
             // style={{ height: "70vh", objectFit: "cover" }}
             className="lg:pt-10 pt-5 grayscale-75 lg:px-0 px-10 h-[50vh] lg:h-[70vh] object-cover"
             src="/hero/main-photo.jpg"
