@@ -8,13 +8,18 @@ const SkillItems = ({ src, alt }: { src: string; alt: string }) => (
 
 export default function MySkillsSection() {
   return (
-    <section className="mx-auto container pt-16 px-16" id="my-skills-section">
-      <p className="text-4xl text-center text-gray-200 pt-20">My Skills</p>
+    <section
+      className="mx-auto container pt-16 lg:px-16 px-10"
+      id="my-skills-section"
+    >
+      <p className="text-4xl text-center text-gray-200 lg:pt-20 pt-10">
+        My Skills
+      </p>
       <div className="grid grid-cols-10">
         <hr className="w-36 h-1 bg-orange-theme border-0 rounded-sm my-5 col-start-5"></hr>
       </div>
 
-      <div className="grid lg:grid-cols-6 grid-cols-3 lg:gap-10 gap-3 py-10">
+      <div className="grid lg:grid-cols-6 grid-cols-2 lg:gap-10 gap-3 py-10">
         <SkillItems src="/skills/css.png" alt="CSS Logo" />
         <SkillItems src="/skills/html.png" alt="HTML Logo" />
         <SkillItems src="/skills/js.png" alt="JS Logo" />

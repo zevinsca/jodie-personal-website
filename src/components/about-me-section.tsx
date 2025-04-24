@@ -1,12 +1,15 @@
 export default function AboutMeSection() {
   return (
-    <section className="mx-auto container pt-10" id="about-me-section">
-      <div className="">
-        <p className="col-span-1 text-6xl text-orange-theme border-l-3 py-8 pl-8 h-full flex items-center border-white mb-3 font-lato">
+    <section
+      className="mx-auto container pt-10 lg:px-0 px-10"
+      id="about-me-section"
+    >
+      <div className="pt-16">
+        <p className="col-span-1 lg:text-6xl text-4xl text-orange-theme border-l-3 lg:py-8 py-5 pl-8 h-full flex items-center border-white mb-3 font-lato">
           About Me
         </p>
         <div className="grid lg:grid-cols-8 gap-7 items-stretch">
-          <p className="col-start-2 col-span-7 py-10 text-gray-400 text-base text-justify px-10 h-full bg-[#1b1b1b] rounded-l-3xl border-orange-theme border-r-3">
+          <p className="lg:col-start-2 lg:col-span-7 lg:py-10 py-7 text-gray-400 lg:text-base text-sm text-justify px-10 h-full bg-[#1b1b1b] rounded-l-3xl border-orange-theme border-r-3">
             Hi, I’m a front-end developer with about 2 years of experience. I
             focus mainly on building responsive layouts using HTML and Tailwind
             CSS.

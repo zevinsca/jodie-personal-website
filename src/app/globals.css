@@ -37,3 +37,46 @@ body {
 .border-orange-theme {
   border-color: var(--orange);
 }
+
+/* HTML: <div class="corner-only"></div> */
+.corner-only {
+  --s: 20px; /* size of the corners */
+  border: 5px solid #fd6f00;
+  background-color: transparent;
+  mask:
+    conic-gradient(#000 0 0) content-box,
+    conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s));
+}
+
+@media (min-width: 1024px) {
+  .lg\:corner-only-lg {
+    --s: 20px; /* larger corners on desktop */
+  }
+}
+
+/* Custom Swiper arrow styling */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fd6f00 !important; /* Change arrow color */
+  width: 40px !important; /* Resize arrow */
+  height: 40px;
+}
+
+/* Optional: make the arrow icon size inside smaller/larger */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; /* Resize arrow icon (default is 44px) */
+}
+
+.swiper-button-prev {
+  left: -5px !important; /* move more to the left */
+}
+
+.swiper-button-next {
+  right: -5px !important; /* move more to the right */
+}
+
+/* .swiper {
+  overflow: scroll !important; 
+} */
