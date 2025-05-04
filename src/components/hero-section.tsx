@@ -50,9 +50,12 @@ export default function HeroSection() {
             </Link>
           </div>
           <div className="flex lg:gap-10 lg:py-10 gap-5 py-5">
-            <button className="bg-orange-theme px-5 py-3 rounded-2xl">
-              Contact Me
-            </button>
+            <Link href="#contact-section">
+              <button className="bg-orange-theme px-5 py-3 rounded-2xl cursor-pointer">
+                Contact Me
+              </button>
+            </Link>
+
             <Link href="/hero/zevinsca_jodie_cv.pdf" download className="w-fit">
               <button className="bg-transparent border-gray-500 text-gray-500 px-5 py-3 rounded-2xl border-2 cursor-pointer">
                 Download CV

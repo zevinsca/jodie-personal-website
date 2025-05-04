@@ -39,9 +39,11 @@ export default function Header() {
               <Link href="#testimonial-section">Testimonial</Link>
             </li>
           </ul>
-          <button className="bg-orange-theme px-5 py-3 rounded-xl flex items-center justify-center w-fit">
-            Contact Me
-          </button>
+          <Link href="#contact-section">
+            <button className="bg-orange-theme px-5 py-3 rounded-xl flex items-center justify-center w-fit cursor-pointer">
+              Contact Me
+            </button>
+          </Link>
         </div>
       </nav>
       {/* Mobile Navigation */}
